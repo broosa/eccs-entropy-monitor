@@ -1,0 +1,10 @@
+body {
+    width: 90%;
+    background-color: #B0B0B0;
+}
+
+.entropy-plot {
+    width: 100%;
+    height: 400px;
+    background-color: #FFFFFF;
+}

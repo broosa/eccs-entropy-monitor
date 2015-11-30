@@ -2,8 +2,20 @@
 <html>
 	<head>
 		<title>Server Entropy Monitor</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"/>  
+
+        <script src="{{ url_for('static', filename='js/jquery-2.1.4.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.flot.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.flot.time.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.flot.axislabels.js') }}"></script>
+
+        <script src="{{ url_for('static', filename='js/entropy.js') }}"></script>
 	</head>
 	<body>
-			
+		<div class="entropy-plot" id="plot-container"></div>	
 	</body>
 </html>

@@ -21,7 +21,7 @@ def api_get_entropy():
         except:
             entropy_available = -1
 
-    timestamp = datetime.now().isoformat(" ")
+    timestamp = datetime.now().isoformat("T")
 
     return flask.jsonify(timestamp=timestamp, entropy=str(entropy_available))
 
